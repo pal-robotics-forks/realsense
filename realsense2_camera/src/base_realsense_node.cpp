@@ -1437,9 +1437,9 @@ void BaseRealSenseNode::ImuMessage_AddDefaultValues(sensor_msgs::Imu& imu_msg)
     imu_msg.orientation.z = 0.0;
     imu_msg.orientation.w = 0.0;
 
-    imu_msg.orientation_covariance = { -1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
-    imu_msg.linear_acceleration_covariance = { _linear_accel_cov, 0.0, 0.0, 0.0, _linear_accel_cov, 0.0, 0.0, 0.0, _linear_accel_cov};
-    imu_msg.angular_velocity_covariance = { _angular_velocity_cov, 0.0, 0.0, 0.0, _angular_velocity_cov, 0.0, 0.0, 0.0, _angular_velocity_cov};
+    imu_msg.orientation_covariance = {{ -1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0}};
+    imu_msg.linear_acceleration_covariance = {{ _linear_accel_cov, 0.0, 0.0, 0.0, _linear_accel_cov, 0.0, 0.0, 0.0, _linear_accel_cov}};
+    imu_msg.angular_velocity_covariance = {{ _angular_velocity_cov, 0.0, 0.0, 0.0, _angular_velocity_cov, 0.0, 0.0, 0.0, _angular_velocity_cov}};
 }
 
 void BaseRealSenseNode::imu_callback_sync(rs2::frame frame, imu_sync_method sync_method)
@@ -1608,20 +1608,20 @@ void BaseRealSenseNode::pose_callback(rs2::frame frame)
         odom_msg.header.stamp = t;
         odom_msg.header.seq = _seq[stream_index];
         odom_msg.pose.pose = pose_msg.pose;
-        odom_msg.pose.covariance = {cov_pose, 0, 0, 0, 0, 0,
+        odom_msg.pose.covariance = {{cov_pose, 0, 0, 0, 0, 0,
                                     0, cov_pose, 0, 0, 0, 0,
                                     0, 0, cov_pose, 0, 0, 0,
                                     0, 0, 0, cov_twist, 0, 0,
                                     0, 0, 0, 0, cov_twist, 0,
-                                    0, 0, 0, 0, 0, cov_twist};
+                                    0, 0, 0, 0, 0, cov_twist}};
         odom_msg.twist.twist.linear = v_msg.vector;
         odom_msg.twist.twist.angular = om_msg.vector;
-        odom_msg.twist.covariance ={cov_pose, 0, 0, 0, 0, 0,
+        odom_msg.twist.covariance ={{cov_pose, 0, 0, 0, 0, 0,
                                     0, cov_pose, 0, 0, 0, 0,
                                     0, 0, cov_pose, 0, 0, 0,
                                     0, 0, 0, cov_twist, 0, 0,
                                     0, 0, 0, 0, cov_twist, 0,
-                                    0, 0, 0, 0, 0, cov_twist};
+                                    0, 0, 0, 0, 0, cov_twist}};
         _imu_publishers[stream_index].publish(odom_msg);
         ROS_DEBUG("Publish %s stream", rs2_stream_to_string(frame.get_profile().stream_type()));
     }
