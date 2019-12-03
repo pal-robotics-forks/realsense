@@ -22,6 +22,7 @@ find_package(catkin REQUIRED COMPONENTS
     ddynamic_reconfigure
     diagnostic_updater
     )
+disable_pal_flags()
 
 if(BUILD_WITH_OPENMP)
     find_package(OpenMP)
