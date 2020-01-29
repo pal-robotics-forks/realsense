@@ -9,7 +9,7 @@ This is the Gazebo URDF model for the Intel RealSense D435 camera
   
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
   
-  <xacro:macro name="gazebo_d435" params="camera_name reference_link topics_ns depth_optical_frame color_optical_frame infrared1_optical_frame infrared2_optical_frame" >
+  <xacro:macro name="gazebo_d435" params="camera_name reference_link topics_ns depth_optical_frame color_optical_frame infrared1_optical_frame infrared2_optical_frame publish_pointcloud:=true" >
 
     <!-- Load parameters to model's main link-->
     <xacro:property name="deg_to_rad" value="0.01745329251994329577" />
@@ -119,26 +119,27 @@ This is the Gazebo URDF model for the Intel RealSense D435 camera
     <gazebo>
       <plugin name="${topics_ns}" filename="librealsense_gazebo_plugin.so">
         <prefix>${camera_name}</prefix>
-      	<depthUpdateRate>60.0</depthUpdateRate>
-      	<colorUpdateRate>60.0</colorUpdateRate>
-      	<infraredUpdateRate>60.0</infraredUpdateRate>
-      	<depthTopicName>depth/image_raw</depthTopicName>
-      	<depthCameraInfoTopicName>depth/camera_info</depthCameraInfoTopicName>
-      	<colorTopicName>color/image_raw</colorTopicName>
-      	<colorCameraInfoTopicName>color/camera_info</colorCameraInfoTopicName>
-      	<infrared1TopicName>infra1/image_raw</infrared1TopicName>
-      	<infrared1CameraInfoTopicName>infra1/camera_info</infrared1CameraInfoTopicName>
-      	<infrared2TopicName>infra2/image_raw</infrared2TopicName>
-      	<infrared2CameraInfoTopicName>infra2/camera_info</infrared2CameraInfoTopicName>
-      	<colorOpticalframeName>${color_optical_frame}</colorOpticalframeName>
-      	<depthOpticalframeName>${depth_optical_frame}</depthOpticalframeName>
-      	<infrared1OpticalframeName>${infrared1_optical_frame}</infrared1OpticalframeName>
-      	<infrared2OpticalframeName>${infrared2_optical_frame}</infrared2OpticalframeName>
-      	<rangeMinDepth>0.2</rangeMinDepth>
-      	<rangeMaxDepth>10.0</rangeMaxDepth>
-      	<pointCloud>false</pointCloud>
-      	<pointCloudTopicName>depth/points</pointCloudTopicName>
-      	<pointCloudCutoff>0.5</pointCloudCutoff>
+        <depthUpdateRate>60.0</depthUpdateRate>
+        <colorUpdateRate>60.0</colorUpdateRate>
+        <infraredUpdateRate>60.0</infraredUpdateRate>
+        <depthTopicName>depth/image_raw</depthTopicName>
+        <depthCameraInfoTopicName>depth/camera_info</depthCameraInfoTopicName>
+        <colorTopicName>color/image_raw</colorTopicName>
+        <colorCameraInfoTopicName>color/camera_info</colorCameraInfoTopicName>
+        <infrared1TopicName>infra1/image_raw</infrared1TopicName>
+        <infrared1CameraInfoTopicName>infra1/camera_info</infrared1CameraInfoTopicName>
+        <infrared2TopicName>infra2/image_raw</infrared2TopicName>
+        <infrared2CameraInfoTopicName>infra2/camera_info</infrared2CameraInfoTopicName>
+        <colorOpticalframeName>${color_optical_frame}</colorOpticalframeName>
+        <depthOpticalframeName>${depth_optical_frame}</depthOpticalframeName>
+        <infrared1OpticalframeName>${infrared1_optical_frame}</infrared1OpticalframeName>
+        <infrared2OpticalframeName>${infrared2_optical_frame}</infrared2OpticalframeName>
+        <rangeMinDepth>0.2</rangeMinDepth>
+        <rangeMaxDepth>10.0</rangeMaxDepth>
+        <pointCloud>${publish_pointcloud}</pointCloud>
+        <pointCloudTopicName>depth/points</pointCloudTopicName>
+        <pointCloudCutoff>0.25</pointCloudCutoff>
+        <pointCloudCutoffMax>9.0</pointCloudCutoffMax>
       </plugin>
     </gazebo>
 
