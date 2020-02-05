@@ -50,7 +50,7 @@
   <arg name="enable_pointcloud"   default="false"/>
   <arg name="pointcloud_texture_stream" default="RS2_STREAM_COLOR"/>  <!-- use RS2_STREAM_ANY to avoid using texture -->
   <arg name="pointcloud_texture_index"  default="0"/>
-  <arg name="allow_no_texture_points"  default="false"/>
+  <arg name="allow_no_texture_points"  default="true"/>
   <arg name="ordered_pc"               default="false"/>
 
   <arg name="enable_sync"         default="false"/>
