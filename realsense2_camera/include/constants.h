@@ -57,6 +57,8 @@ namespace realsense2_camera
 
     const int IMU_FPS         = 0;
 
+    const int POINTCLOUD_FRAME_SKIP      = 1;
+
 
     const bool ENABLE_DEPTH   = true;
     const bool ENABLE_INFRA1  = true;

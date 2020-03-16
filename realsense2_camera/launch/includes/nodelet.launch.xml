@@ -107,7 +107,7 @@
   <arg name="reconnect_timeout"        default= "6.0"/>
   <arg name="wait_for_device_timeout"  default= "-1.0"/>
   <arg name="unite_imu_method"         default="none"/> <!-- Options are: [none, copy, linear_interpolation] -->
-  
+  <arg name="pointcloud_frame_skip"               default="1"/> <!-- number of pointcloud frames to skip -->
 
 
   <node unless="$(arg external_manager)" pkg="nodelet" type="nodelet" name="$(arg manager)" args="manager" output="$(arg output)" required="$(arg required)" respawn="$(arg respawn)"/>
@@ -213,6 +213,8 @@
     <param name="reconnect_timeout"        type="double" value="$(arg reconnect_timeout)"/>
     <param name="wait_for_device_timeout"  type="double" value="$(arg wait_for_device_timeout)"/>
     <param name="unite_imu_method"         type="str"    value="$(arg unite_imu_method)"/>
+
+    <param name="pointcloud_frame_skip"               type="int"    value="$(arg pointcloud_frame_skip)"/>
 
   </node>
 </launch>
