@@ -8,7 +8,6 @@ option(SET_USER_BREAK_AT_STARTUP "Set user wait point in startup (for debug)" OF
 add_definitions(-D_CRT_SECURE_NO_WARNINGS)
 set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
 
-set(DISABLE_PAL_FLAGS TRUE)
 find_package(catkin REQUIRED COMPONENTS
     message_generation
     nav_msgs
@@ -23,6 +22,7 @@ find_package(catkin REQUIRED COMPONENTS
     ddynamic_reconfigure
     diagnostic_updater
     )
+disable_pal_flags()
 
 if(BUILD_WITH_OPENMP)
     find_package(OpenMP)
