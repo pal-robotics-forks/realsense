@@ -7,16 +7,16 @@
   
   <xacro:arg name="use_nominal_extrinsics" default="True" />
   <link name="base_link" />
-  <xacro:sensor_d415 parent="base_link" name="d415">
+  <xacro:sensor_d415 parent="base_link" name="d415" use_nominal_extrinsics="$(arg use_nominal_extrinsics)">>
     <origin xyz="0 0 0" rpy="0 0 0"/>
   </xacro:sensor_d415>
-  <xacro:sensor_d435 parent="base_link" name="d435">
+  <xacro:sensor_d435 parent="base_link" name="d435" use_nominal_extrinsics="$(arg use_nominal_extrinsics)">>
     <origin xyz="0 0 0.1" rpy="0 0 0"/>
   </xacro:sensor_d435>
-  <xacro:sensor_r410 parent="base_link" name="r410">
+  <xacro:sensor_r410 parent="base_link" name="r410" use_nominal_extrinsics="$(arg use_nominal_extrinsics)">>
     <origin xyz="0 0 0.2" rpy="0 0 0"/>
   </xacro:sensor_r410>
-  <xacro:sensor_r430 parent="base_link" name="r430">
+  <xacro:sensor_r430 parent="base_link" name="r430" use_nominal_extrinsics="$(arg use_nominal_extrinsics)">>
     <origin xyz="0 0 0.3" rpy="0 0 0"/>
   </xacro:sensor_r430>
 </robot>

@@ -4,10 +4,10 @@
   
   <xacro:arg name="use_nominal_extrinsics" default="True" />
   <link name="base_link" />
-  <xacro:sensor_r410 parent="base_link" name="camera_bottom" >
+  <xacro:sensor_r410 parent="base_link" name="camera_bottom" use_nominal_extrinsics="$(arg use_nominal_extrinsics)">>
     <origin xyz="0 0 0" rpy="0 0 0"/>
   </xacro:sensor_r410>
-  <xacro:sensor_r410 parent="base_link" name="camera_top">
+  <xacro:sensor_r410 parent="base_link" name="camera_top" use_nominal_extrinsics="$(arg use_nominal_extrinsics)">>
     <origin xyz="0 0 0.2" rpy="0 0 0"/>
   </xacro:sensor_r410>
 </robot>
