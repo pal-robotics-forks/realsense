@@ -158,6 +158,6 @@ aluminum peripherial evaluation case.
     </xacro:if>
 
     <!-- Realsense Gazebo Plugin -->
-    <xacro:gazebo_d435 camera_name="${name}" reference_link="${name}_link" topics_ns="${topics_ns}" depth_optical_frame="${name}_depth_optical_frame" color_optical_frame="${name}_color_optical_frame" infrared1_optical_frame="${name}_left_ir_optical_frame" infrared2_optical_frame="${name}_right_ir_optical_frame"/>
+    <xacro:gazebo_d435 camera_name="${name}" reference_link="${name}_link" topics_ns="${topics_ns}" depth_optical_frame="${name}_depth_optical_frame" color_optical_frame="${name}_color_optical_frame" infrared1_optical_frame="${name}_infra1_ir_optical_frame" infrared2_optical_frame="${name}_infra2_ir_optical_frame" publish_pointcloud="${publish_pointcloud}"/>
   </xacro:macro>
 </robot>

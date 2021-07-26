@@ -9,6 +9,7 @@ add_definitions(-D_CRT_SECURE_NO_WARNINGS)
 set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
 
 set(DISABLE_PAL_FLAGS TRUE)
+
 find_package(catkin REQUIRED COMPONENTS
     message_generation
     nav_msgs
