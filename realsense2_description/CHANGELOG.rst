@@ -2,8 +2,8 @@
 Changelog for package realsense2_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1003.2.0 (2021-08-24)
+---------------------
 * Fixing view model
 * Fixing rebase
 * Readd topics_ns:=camera  argument

@@ -2,8 +2,8 @@
 Changelog for package realsense2_camera
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1003.2.0 (2021-08-24)
+---------------------
 * Fixing rebase
 * Change how disable pal flags are set
 * Revert "compatible way of disabling pal flags"
