@@ -2,6 +2,21 @@
 Changelog for package realsense2_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Fixing view model
+* Fixing rebase
+* Readd topics_ns:=camera  argument
+* fixed tests usage of extrinsic param
+* updated realsense urdf for ari simulation
+* Changed /depth/points to /depth/color/points
+* added publish_pointcloud argument to urdf
+* Add transform between pose_frame and camera link for image orientation
+* Add pose_frame link
+* added T265 URDF and gazebo xacro
+* added D435 gazebo xacro to use realsense gazebo plugin
+* Contributors: Procópio Stein, Sai Kishor Kothakota, Victor Lopez, federiconardi, saracooper, sergiomoyano
+
 2.3.2 (2021-11-15)
 ------------------
 * Add D455 description
