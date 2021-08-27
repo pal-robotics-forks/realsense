@@ -2,6 +2,14 @@
 Changelog for package realsense2_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'use_named_material' into 'ferrum-devel'
+  Remove materials file to avoid double definition
+  See merge request ros-overlays/realsense!25
+* Remove materials file to avoid double definition
+* Contributors: davidfernandez, victorgonzalez
+
 1003.2.0 (2021-08-24)
 ---------------------
 * Fixing view model
