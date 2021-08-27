@@ -9,9 +9,6 @@ aluminum peripherial evaluation case.
 -->
 
 <robot name="sensor_r410" xmlns:xacro="http://ros.org/wiki/xacro">
-  <!-- Includes -->
-  <xacro:include filename="$(find realsense2_description)/urdf/_materials.urdf.xacro" />
-  
   <xacro:macro name="sensor_r410" params="parent *origin  name:=camera  use_nominal_extrinsics:=false">
     <xacro:property name="M_PI" value="3.1415926535897931" />
 
@@ -34,6 +31,10 @@ aluminum peripherial evaluation case.
     <xacro:property name="r410_cam_depth_py" value="-0.0425"/>
     <xacro:property name="r410_cam_depth_pz" value="0.026"/>
 
+    <material name="${name}_aluminum">
+      <color rgba="0.5 0.5 0.5 1"/>
+    </material>
+
     <!-- camera body, with origin at bottom screw mount -->
     <joint name="${name}_joint" type="fixed">
       <xacro:insert_block name="origin" />
@@ -48,7 +49,7 @@ aluminum peripherial evaluation case.
           <box size="${r410_cam_width} ${r410_cam_height} ${r410_cam_depth}"/>
           <!--<mesh filename="package://realsense2_description/meshes/r410/r410.dae" />-->
         </geometry>
-        <material name="aluminum"/>
+        <material name="${name}_aluminum"/>
       </visual>
       <collision>
         <origin xyz="0.0 0.0 ${r410_cam_height/2}" rpy="0 0 0"/>
