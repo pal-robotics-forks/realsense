@@ -1704,8 +1704,8 @@ void BaseRealSenseNode::frame_callback(rs2::frame frame)
 		    if (frame.get_frame_number()%pointcloud_frame_skip_ == 0)
 		    {
                       publishPointCloud(f.as<rs2::points>(), t, frameset);
-                      continue;
 		    }
+            continue;
                 }
                 if (stream_type == RS2_STREAM_DEPTH)
                 {
