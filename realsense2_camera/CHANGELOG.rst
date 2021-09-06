@@ -2,8 +2,8 @@
 Changelog for package realsense2_camera
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1003.2.2 (2021-09-06)
+---------------------
 * Merge branch 'Fix-empty-depth-images' into 'ferrum-devel'
   Fix empty depth images
   See merge request ros-overlays/realsense!26
