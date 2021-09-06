@@ -2,6 +2,9 @@
 Changelog for package realsense2_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 1003.2.1 (2021-08-27)
 ---------------------
 * Merge branch 'use_named_material' into 'ferrum-devel'
