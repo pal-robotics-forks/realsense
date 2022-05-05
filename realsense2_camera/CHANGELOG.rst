@@ -2,6 +2,14 @@
 Changelog for package realsense2_camera
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'fix_public_melodic_build' into 'ferrum-devel'
+  Fix compilation in public melodic
+  See merge request ros-overlays/realsense!27
+* Fix compilation in public melodic
+* Contributors: Jordan Palacios, luca
+
 1003.2.2 (2021-09-06)
 ---------------------
 * Merge branch 'Fix-empty-depth-images' into 'ferrum-devel'
