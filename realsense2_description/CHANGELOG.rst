@@ -2,6 +2,32 @@
 Changelog for package realsense2_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+
+Forthcoming
+-----------
+* Update version
+* 1003.2.3
+* Updated changelogs
+* 1003.2.2
+* Updated Changelog
+* 1003.2.1
+* Update Changelog
+* Remove materials file to avoid double definition
+* 1003.2.0
+* Updated Changelog
+* Fixing view model
+* Fixing rebase
+* Readd topics_ns:=camera  argument
+* fixed tests usage of extrinsic param
+* updated realsense urdf for ari simulation
+* Changed /depth/points to /depth/color/points
+* added publish_pointcloud argument to urdf
+* Add transform between pose_frame and camera link for image orientation
+* Add pose_frame link
+* added T265 URDF and gazebo xacro
+* added D435 gazebo xacro to use realsense gazebo plugin
+* Contributors: Jordan Palacios, Procópio Stein, Sai Kishor Kothakota, Victor Lopez, Víctor González, davidfernandez, federiconardi, saracooper, sergiomoyano
+
 1003.2.3 (2022-05-05)
 ---------------------
 

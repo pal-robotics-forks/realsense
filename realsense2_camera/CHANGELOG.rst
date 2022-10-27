@@ -2,6 +2,34 @@
 Changelog for package realsense2_camera
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+
+Forthcoming
+-----------
+* Update version
+* 1003.2.3
+* Updated changelogs
+* Fix compilation in public melodic
+* 1003.2.2
+* Updated Changelog
+* Formating
+* Fix empty depth images
+* 1003.2.1
+* Update Changelog
+* 1003.2.0
+* Updated Changelog
+* Proper way of disabling pal build flags
+* Fix dependencies
+* Fixing rebase
+* Change how disable pal flags are set
+* Revert "compatible way of disabling pal flags"
+  This reverts commit 4e17d45bb4c8dfb2ac1d7fad3beb481d5e74afd9.
+* compatible way of disabling pal flags
+* hack to reduce pointcloud publishing frequency
+* Changed default value of allow_no_texture_points to true
+* added disable_pal_flags() to CMakeLists.txt
+* add compilation fixes
+* Contributors: Jordan Palacios, Procópio Stein, Sai Kishor Kothakota, Sara Cooper, Victor Lopez, Víctor González, federiconardi, luca, sergiomoyano, victor
+
 1003.2.3 (2022-05-05)
 ---------------------
 * Merge branch 'fix_public_melodic_build' into 'ferrum-devel'
