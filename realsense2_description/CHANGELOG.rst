@@ -2,9 +2,8 @@
 Changelog for package realsense2_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-
-Forthcoming
------------
+1003.3.1 (2022-10-27)
+---------------------
 * Update version
 * 1003.2.3
 * Updated changelogs
