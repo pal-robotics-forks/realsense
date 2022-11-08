@@ -56,8 +56,8 @@ Changelog for package realsense2_description
 * added D435 gazebo xacro to use realsense gazebo plugin
 * Contributors: Procópio Stein, Sai Kishor Kothakota, Victor Lopez, federiconardi, saracooper, sergiomoyano
 
-Forthcoming
------------
+1003.3.2 (2022-11-08)
+---------------------
 * Merge branch 'feat/d455-urdf-gazebo' into 'ferrum-devel'
   Added support for gazebo with d455 and pal changes in d455 urdf
   See merge request ros-overlays/realsense!28

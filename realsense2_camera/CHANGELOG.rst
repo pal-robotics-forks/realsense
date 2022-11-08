@@ -62,8 +62,8 @@ Changelog for package realsense2_camera
 * add compilation fixes
 * Contributors: Procópio Stein, Sai Kishor Kothakota, Sara Cooper, Victor Lopez, federiconardi, sergiomoyano
 
-Forthcoming
------------
+1003.3.2 (2022-11-08)
+---------------------
 * 1003.3.1
 * Update Changelog
 * Update version
