@@ -56,6 +56,37 @@ Changelog for package realsense2_description
 * added D435 gazebo xacro to use realsense gazebo plugin
 * Contributors: Procópio Stein, Sai Kishor Kothakota, Victor Lopez, federiconardi, saracooper, sergiomoyano
 
+Forthcoming
+-----------
+* Merge branch 'feat/d455-urdf-gazebo' into 'ferrum-devel'
+  Added support for gazebo with d455 and pal changes in d455 urdf
+  See merge request ros-overlays/realsense!28
+* Added support for gazebo with d455 and pal changes in d455 urdf
+* 1003.3.1
+* Update Changelog
+* Update version
+* 1003.2.3
+* Updated changelogs
+* 1003.2.2
+* Updated Changelog
+* 1003.2.1
+* Update Changelog
+* Remove materials file to avoid double definition
+* 1003.2.0
+* Updated Changelog
+* Fixing view model
+* Fixing rebase
+* Readd topics_ns:=camera  argument
+* fixed tests usage of extrinsic param
+* updated realsense urdf for ari simulation
+* Changed /depth/points to /depth/color/points
+* added publish_pointcloud argument to urdf
+* Add transform between pose_frame and camera link for image orientation
+* Add pose_frame link
+* added T265 URDF and gazebo xacro
+* added D435 gazebo xacro to use realsense gazebo plugin
+* Contributors: Jordan Palacios, Procópio Stein, Sai Kishor Kothakota, Victor Lopez, Víctor González, davidfernandez, federiconardi, saracooper, sergiomoyano
+
 2.3.2 (2021-11-15)
 ------------------
 * Add D455 description
