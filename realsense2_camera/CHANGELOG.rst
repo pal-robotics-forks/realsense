@@ -62,6 +62,14 @@ Changelog for package realsense2_camera
 * add compilation fixes
 * Contributors: Procópio Stein, Sai Kishor Kothakota, Sara Cooper, Victor Lopez, federiconardi, sergiomoyano
 
+Forthcoming
+-----------
+* Merge branch 'fix/multiple_cameras_initial_reset' into 'ferrum-devel'
+  fix multiple cameras initial_reset issue
+  See merge request ros-overlays/realsense!29
+* fix multiple cameras initial_reset issue
+* Contributors: sergiomoyano
+
 1003.3.2 (2022-11-08)
 ---------------------
 * 1003.3.1
