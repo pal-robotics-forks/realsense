@@ -95,10 +95,11 @@ void RealSenseNodeFactory::getDevice(rs2::device_list list)
 		else
 		{
 			bool found = false;
-      		ROS_INFO_STREAM(" ");
+			ROS_INFO_STREAM(" ");
+			
+			rs2::device dev;
 			for (size_t count = 0; count < list.size(); count++)
 			{
-				rs2::device dev;
 				try
 				{
 					dev = list[count];
