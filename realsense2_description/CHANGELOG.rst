@@ -2,6 +2,11 @@
 Changelog for package realsense2_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Set overlay package version
+* Contributors: sergiomoyano
+
 4.54.1 (2023-06-27)
 -------------------
 * Update mesh path

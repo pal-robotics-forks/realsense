@@ -2,6 +2,11 @@
 Changelog for package realsense2_camera_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Set overlay package version
+* Contributors: sergiomoyano
+
 4.54.1 (2023-06-27)
 -------------------
 * add info about extrinsic msg format in Extrinsics.msg and README.md

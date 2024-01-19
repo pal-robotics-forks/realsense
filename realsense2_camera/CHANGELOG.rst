@@ -2,6 +2,12 @@
 Changelog for package realsense2_camera
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Set overlay package version
+* Fix compilation errors and change sdk version to 2.53.1
+* Contributors: sergiomoyano
+
 4.54.1 (2023-06-27)
 -------------------
 * Applying AlignDepth filter after Pointcloud
