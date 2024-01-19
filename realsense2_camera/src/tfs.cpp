@@ -359,20 +359,20 @@ void BaseRealSenseNode::pose_callback(rs2::frame frame)
         odom_msg.child_frame_id = FRAME_ID(POSE);
         odom_msg.header.stamp = t;
         odom_msg.pose.pose = pose_msg.pose;
-        odom_msg.pose.covariance = {cov_pose, 0, 0, 0, 0, 0,
+        odom_msg.pose.covariance = {{cov_pose, 0, 0, 0, 0, 0,
                                     0, cov_pose, 0, 0, 0, 0,
                                     0, 0, cov_pose, 0, 0, 0,
                                     0, 0, 0, cov_twist, 0, 0,
                                     0, 0, 0, 0, cov_twist, 0,
-                                    0, 0, 0, 0, 0, cov_twist};
+                                    0, 0, 0, 0, 0, cov_twist}};
         odom_msg.twist.twist.linear = v_msg.vector;
         odom_msg.twist.twist.angular = om_msg.vector;
-        odom_msg.twist.covariance ={cov_pose, 0, 0, 0, 0, 0,
+        odom_msg.twist.covariance ={{cov_pose, 0, 0, 0, 0, 0,
                                     0, cov_pose, 0, 0, 0, 0,
                                     0, 0, cov_pose, 0, 0, 0,
                                     0, 0, 0, cov_twist, 0, 0,
                                     0, 0, 0, 0, cov_twist, 0,
-                                    0, 0, 0, 0, 0, cov_twist};
+                                    0, 0, 0, 0, 0, cov_twist}};
         _odom_publisher->publish(odom_msg);
         ROS_DEBUG("Publish %s stream", rs2_stream_to_string(frame.get_profile().stream_type()));
     }
