@@ -73,7 +73,9 @@ configurable_parameters = [{'name': 'camera_name',                  'default': '
                            {'name': 'hdr_merge.enable',             'default': 'false', 'description': 'hdr_merge filter enablement flag'},
                            {'name': 'wait_for_device_timeout',      'default': '-1.', 'description': 'Timeout for waiting for device to connect (Seconds)'},
                            {'name': 'reconnect_timeout',            'default': '6.', 'description': 'Timeout(seconds) between consequtive reconnection attempts'},
-                          ]
+                           {'name': 'pointcloud_frame_skip',        'default': '1', 'description': 'Pointcloud framerate skip divider'},
+                           
+                    ]
 
 def declare_configurable_parameters(parameters):
     return [DeclareLaunchArgument(param['name'], default_value=param['default'], description=param['description']) for param in parameters]

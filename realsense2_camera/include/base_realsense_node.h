@@ -320,7 +320,7 @@ namespace realsense2_camera
         std::shared_ptr<diagnostic_updater::Updater> _diagnostics_updater;
         rs2::stream_profile _base_profile;
 
-
+        int _pointcloud_frame_skip;
     };//end class
 }
 

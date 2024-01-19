@@ -113,7 +113,8 @@ BaseRealSenseNode::BaseRealSenseNode(rclcpp::Node& node,
     _publish_odom_tf(false),
     _imu_sync_method(imu_sync_method::NONE),
     _is_profile_changed(false),
-    _is_align_depth_changed(false)
+    _is_align_depth_changed(false),
+    _pointcloud_frame_skip(1)
 {
     if ( use_intra_process )
     {
@@ -525,8 +526,12 @@ void BaseRealSenseNode::frame_callback(rs2::frame frame)
 
             if (f.is<rs2::points>())
             {
-                publishPointCloud(f.as<rs2::points>(), t, frameset);
+                if (frame.get_frame_number() % _pointcloud_frame_skip == 0)
+                {
+                    publishPointCloud(f.as<rs2::points>(), t, frameset);
+                }
                 continue;
+                
             }
             if (stream_type == RS2_STREAM_DEPTH)
             {

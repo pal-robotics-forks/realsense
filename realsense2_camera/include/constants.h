@@ -107,7 +107,8 @@ namespace realsense2_camera
     const bool ENABLE_IMU     = true;
     const bool HOLD_BACK_IMU_FOR_FRAMES = false;
     const bool PUBLISH_ODOM_TF = true;
-
+    
+    const int POINTCLOUD_FRAME_SKIP = 1;
 
     const std::string DEFAULT_BASE_FRAME_ID            = "link";
     const std::string DEFAULT_ODOM_FRAME_ID            = "odom_frame";
