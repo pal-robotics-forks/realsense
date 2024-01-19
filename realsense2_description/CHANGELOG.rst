@@ -2,8 +2,8 @@
 Changelog for package realsense2_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2000.0.1 (2024-01-19)
+---------------------
 * Set overlay package version
 * Contributors: sergiomoyano
 

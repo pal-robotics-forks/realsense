@@ -2,8 +2,8 @@
 Changelog for package realsense2_camera
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2000.0.1 (2024-01-19)
+---------------------
 * Set overlay package version
 * Fix compilation errors and change sdk version to 2.53.1
 * Contributors: sergiomoyano
