@@ -56,6 +56,15 @@ Changelog for package realsense2_description
 * added D435 gazebo xacro to use realsense gazebo plugin
 * Contributors: Procópio Stein, Sai Kishor Kothakota, Victor Lopez, federiconardi, saracooper, sergiomoyano
 
+Forthcoming
+-----------
+* Merge branch 'feat/smd/realsense_simulation' into 'ferrum-devel'
+  Externalize gazebo simulation xacro
+  See merge request ros-overlays/realsense!31
+* Fix typo in package.xml
+* Externalize gazebo simulation xacro
+* Contributors: sergiomoyano
+
 1003.3.3 (2022-11-14)
 ---------------------
 
