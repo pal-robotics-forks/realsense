@@ -17,6 +17,7 @@
   <depend>rclcpp</depend>
   <depend>rclcpp_components</depend>
   <depend>realsense2_camera_msgs</depend>
+  <depend>realsense_simulation</depend>
   
   <exec_depend>launch_ros</exec_depend>
   <exec_depend>xacro</exec_depend>

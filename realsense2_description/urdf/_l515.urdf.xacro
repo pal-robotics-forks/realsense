@@ -25,8 +25,9 @@ aluminum peripherial evaluation case.
   <!-- Includes -->
   <xacro:include filename="$(find realsense2_description)/urdf/_materials.urdf.xacro" />
   <xacro:include filename="$(find realsense2_description)/urdf/_usb_plug.urdf.xacro" /> <!-- this specific plug does not apply to L515 -->
-
-  <xacro:macro name="sensor_l515" params="parent *origin name:=camera use_nominal_extrinsics:=false add_plug:=false use_mesh:=true">
+  <xacro:include filename="$(find realsense_simulation)/urdf/_l515.gazebo.xacro" />
+  
+  <xacro:macro name="sensor_l515" params="parent *origin name:=camera use_nominal_extrinsics:=false add_plug:=false use_mesh:=true topics_ns:=camera">
     <xacro:property name="M_PI" value="3.1415926535897931" />
 
     <!-- The following values are approximate, and the camera node
@@ -209,5 +210,9 @@ aluminum peripherial evaluation case.
         <origin xyz="${l515_cam_mount_from_glass_offset-0.0148} -0.018 0.018" rpy="${M_PI/4} 0 0 "/>
       </xacro:usb_plug>
     </xacro:if>
+
+    <!-- Realsense Gazebo Plugin -->
+    <xacro:gazebo_l515 camera_name="${name}" reference_link="${name}_link" topics_ns="${topics_ns}" depth_optical_frame="${name}_depth_optical_frame" color_optical_frame="${name}_color_optical_frame" infrared_optical_frame="${name}_infra_optical_frame"/>
+
   </xacro:macro>
 </robot>
