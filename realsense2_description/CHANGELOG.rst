@@ -2,8 +2,8 @@
 Changelog for package realsense2_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2000.0.2 (2024-01-24)
+---------------------
 * Added realsense gazebo urdf in d435, d455 and l515
 * Contributors: sergiomoyano
 

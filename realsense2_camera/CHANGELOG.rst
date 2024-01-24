@@ -2,8 +2,8 @@
 Changelog for package realsense2_camera
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2000.0.2 (2024-01-24)
+---------------------
 * Update librealsense sdk version to 2.54.2
 * Added frameskip pointcloud feature
 * Contributors: sergiomoyano
