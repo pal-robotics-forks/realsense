@@ -2,6 +2,14 @@
 Changelog for package realsense2_camera
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'smd/fix/pal_flags' into 'alum-devel'
+  Disable pal flags CMakeLists.txt
+  See merge request ros-overlays/realsense!34
+* Disable pal flags CMakeLists.txt
+* Contributors: sergiomoyano
+
 2000.0.2 (2024-01-24)
 ---------------------
 * Update librealsense sdk version to 2.54.2
