@@ -25,7 +25,7 @@ aluminum peripherial evaluation case.
   <!-- Includes -->
   <xacro:include filename="$(find realsense2_description)/urdf/_materials.urdf.xacro" />
   <xacro:include filename="$(find realsense2_description)/urdf/_usb_plug.urdf.xacro" />
-  <xacro:include filename="$(find realsense_description)/urdf/_d455.gazebo.xacro" />
+  <xacro:include filename="$(find realsense_simulation)/urdf/_d455.gazebo.xacro" />
 
   <xacro:macro name="sensor_d455" params="parent *origin name:=camera use_nominal_extrinsics:=false topics_ns:=camera publish_pointcloud:=true" >
     <xacro:arg name="add_plug" default="false" />
