@@ -2,8 +2,8 @@
 Changelog for package realsense2_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2000.0.4 (2024-02-12)
+---------------------
 * Merge branch 'fix/ros2-pkg-name' into 'alum-devel'
   fix pkg name of gazebo plugins
   See merge request ros-overlays/realsense!32
