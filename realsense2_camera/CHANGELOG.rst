@@ -2,6 +2,9 @@
 Changelog for package realsense2_camera
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 2000.0.3 (2024-02-12)
 ---------------------
 * Merge branch 'smd/fix/pal_flags' into 'alum-devel'
