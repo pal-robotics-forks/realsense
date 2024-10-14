@@ -2,6 +2,14 @@
 Changelog for package realsense2_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'man/added-d405' into 'alum-devel'
+  added meshes and urdf for d405
+  See merge request ros-overlays/realsense!37
+* added meshes and urdf for d405
+* Contributors: martinaannicelli, sergiomoyano
+
 2000.0.4 (2024-02-12)
 ---------------------
 * Merge branch 'fix/ros2-pkg-name' into 'alum-devel'
