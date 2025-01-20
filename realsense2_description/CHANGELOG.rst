@@ -56,8 +56,8 @@ Changelog for package realsense2_description
 * added D435 gazebo xacro to use realsense gazebo plugin
 * Contributors: Procópio Stein, Sai Kishor Kothakota, Victor Lopez, federiconardi, saracooper, sergiomoyano
 
-Forthcoming
------------
+1003.4.1 (2025-01-20)
+---------------------
 
 1003.4.0 (2024-01-22)
 ---------------------
