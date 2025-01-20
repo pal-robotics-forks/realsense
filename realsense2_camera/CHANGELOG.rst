@@ -62,6 +62,14 @@ Changelog for package realsense2_camera
 * add compilation fixes
 * Contributors: Procópio Stein, Sai Kishor Kothakota, Sara Cooper, Victor Lopez, federiconardi, sergiomoyano
 
+Forthcoming
+-----------
+* Merge branch 'feat/aca/d405-ros1-compatibility' into 'ferrum-devel'
+  fix to make d405 working with ROS 1
+  See merge request ros-overlays/realsense!38
+* fix to make d405 working with ROS 1
+* Contributors: andreacapodacqua, sergiomoyano
+
 1003.4.0 (2024-01-22)
 ---------------------
 
