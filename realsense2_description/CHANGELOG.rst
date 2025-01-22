@@ -2,8 +2,8 @@
 Changelog for package realsense2_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2000.3.0 (2025-01-22)
+---------------------
 * using topics_ns for d435i
 * Contributors: antoniobrandi
 
