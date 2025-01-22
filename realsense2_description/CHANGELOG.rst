@@ -2,8 +2,8 @@
 Changelog for package realsense2_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2000.2.0 (2025-01-22)
+---------------------
 * fix d405 macro
 * Contributors: andreacapodacqua
 
