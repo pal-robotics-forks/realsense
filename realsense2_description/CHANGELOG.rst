@@ -2,6 +2,11 @@
 Changelog for package realsense2_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* fix d405 macro
+* Contributors: andreacapodacqua
+
 2000.1.0 (2024-10-14)
 ---------------------
 * Merge branch 'man/added-d405' into 'alum-devel'
