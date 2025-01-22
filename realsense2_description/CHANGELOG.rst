@@ -2,6 +2,11 @@
 Changelog for package realsense2_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* using topics_ns for d435i
+* Contributors: antoniobrandi
+
 2000.2.0 (2025-01-22)
 ---------------------
 * fix d405 macro
