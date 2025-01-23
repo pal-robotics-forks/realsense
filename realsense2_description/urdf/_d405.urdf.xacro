@@ -32,8 +32,6 @@ aluminum peripherial evaluation case.
 
     <!-- The following values are approximate, and the camera node
      publishing TF values with actual calibrated camera extrinsic values -->
-    <xacro:property name="d405_cam_depth_to_infra1_offset" value="0.0"/>
-    <xacro:property name="d405_cam_depth_to_infra2_offset" value="-0.018"/>
     <xacro:property name="d405_cam_depth_to_color_offset" value="0.0"/>
 
     <!-- The following values model the aluminum peripherial case for the
@@ -110,36 +108,6 @@ aluminum peripherial evaluation case.
       </joint>
       <link name="${name}_depth_optical_frame"/>
 
-      <!-- camera left IR joints and links -->
-      <joint name="${name}_infra1_joint" type="fixed">
-        <origin xyz="0 ${d405_cam_depth_to_infra1_offset} 0" rpy="0 0 0" />
-        <parent link="${name}_link" />
-        <child link="${name}_infra1_frame" />
-      </joint>
-      <link name="${name}_infra1_frame"/>
-
-      <joint name="${name}_infra1_optical_joint" type="fixed">
-        <origin xyz="0 0 0" rpy="${-M_PI/2} 0 ${-M_PI/2}" />
-        <parent link="${name}_infra1_frame" />
-        <child link="${name}_infra1_optical_frame" />
-      </joint>
-      <link name="${name}_infra1_optical_frame"/>
-
-      <!-- camera right IR joints and links -->
-      <joint name="${name}_infra2_joint" type="fixed">
-        <origin xyz="0 ${d405_cam_depth_to_infra2_offset} 0" rpy="0 0 0" />
-        <parent link="${name}_link" />
-        <child link="${name}_infra2_frame" />
-      </joint>
-      <link name="${name}_infra2_frame"/>
-
-      <joint name="${name}_infra2_optical_joint" type="fixed">
-        <origin xyz="0 0 0" rpy="${-M_PI/2} 0 ${-M_PI/2}" />
-        <parent link="${name}_infra2_frame" />
-        <child link="${name}_infra2_optical_frame" />
-      </joint>
-      <link name="${name}_infra2_optical_frame"/>
-
       <!-- camera color joints and links -->
       <joint name="${name}_color_joint" type="fixed">
         <origin xyz="0 ${d405_cam_depth_to_color_offset} 0" rpy="0 0 0" />
@@ -163,7 +131,7 @@ aluminum peripherial evaluation case.
     </xacro:if>
 
     <!-- Realsense Gazebo Plugin -->
-    <xacro:gazebo_d405 camera_name="${name}" reference_link="${name}_link" topics_ns="${topics_ns}" depth_optical_frame="${name}_depth_optical_frame" color_optical_frame="${name}_color_optical_frame" infrared1_optical_frame="${name}_infra1_ir_optical_frame" infrared2_optical_frame="${name}_infra2_ir_optical_frame" publish_pointcloud="${publish_pointcloud}"/>
+    <xacro:gazebo_d405 camera_name="${name}" reference_link="${name}_link" topics_ns="${topics_ns}" depth_optical_frame="${name}_depth_optical_frame" color_optical_frame="${name}_color_optical_frame" publish_pointcloud="${publish_pointcloud}"/>
 
   </xacro:macro>
 </robot>
