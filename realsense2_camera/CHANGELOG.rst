@@ -62,6 +62,9 @@ Changelog for package realsense2_camera
 * add compilation fixes
 * Contributors: Procópio Stein, Sai Kishor Kothakota, Sara Cooper, Victor Lopez, federiconardi, sergiomoyano
 
+Forthcoming
+-----------
+
 1003.4.1 (2025-01-20)
 ---------------------
 * Merge branch 'feat/aca/d405-ros1-compatibility' into 'ferrum-devel'
