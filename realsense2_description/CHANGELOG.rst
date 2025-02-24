@@ -2,8 +2,8 @@
 Changelog for package realsense2_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2000.4.0 (2025-02-24)
+---------------------
 * Merge branch 'tpe/simplify_3d_mesh' into 'alum-devel'
   Fix dae mesh + replace by a simplified mesh for simulation
   See merge request ros-overlays/realsense!42
