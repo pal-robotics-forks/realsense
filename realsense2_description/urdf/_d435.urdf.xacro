@@ -27,7 +27,7 @@ aluminum peripherial evaluation case.
   <xacro:include filename="$(find realsense2_description)/urdf/_usb_plug.urdf.xacro" />
   <xacro:include filename="$(find realsense_simulation)/urdf/_d435.gazebo.xacro" />
   
-  <xacro:macro name="sensor_d435" params="parent *origin name:=camera use_nominal_extrinsics:=false add_plug:=false use_mesh:=true topics_ns:=camera publish_pointcloud:=true">
+  <xacro:macro name="sensor_d435" params="parent *origin name:=camera use_nominal_extrinsics:=false add_plug:=false use_mesh:=false topics_ns:=camera publish_pointcloud:=true">
     <xacro:property name="M_PI" value="3.1415926535897931" />
 
     <!-- The following values are approximate, and the camera node
@@ -80,24 +80,23 @@ aluminum peripherial evaluation case.
           </geometry>
         </xacro:if>
         <xacro:unless value="${use_mesh}">
-          <origin xyz="0 ${-d435_cam_depth_py} 0" rpy="0 0 0"/>
+          <origin xyz="${d435_zero_depth_to_glass + d435_glass_to_front} ${-d435_cam_depth_py} 0" rpy="${M_PI/2} 0 ${M_PI/2}"/>
           <geometry>
-            <box size="${d435_cam_depth} ${d435_cam_width} ${d435_cam_height}"/>
+            <mesh filename="file://$(find realsense2_description)/meshes/d435_simplified.stl" />
           </geometry>
           <material name="aluminum"/>
         </xacro:unless>     
       </visual>
       <collision>
-        <origin xyz="0 ${-d435_cam_depth_py} 0" rpy="0 0 0"/>
+        <origin xyz="${-d435_cam_depth/2 + d435_zero_depth_to_glass} ${-d435_cam_depth_py} 0" rpy="0 0 0"/>
         <geometry>
           <box size="${d435_cam_depth} ${d435_cam_width} ${d435_cam_height}"/>
         </geometry>
       </collision>
       <inertial>
-        <!-- The following are not reliable values, and should not be used for modeling -->
-        <mass value="0.072" />
-        <origin xyz="0 0 0" />
-        <inertia ixx="0.003881243" ixy="0.0" ixz="0.0" iyy="0.000498940" iyz="0.0" izz="0.003879257" />
+        <mass value="0.075" />
+        <origin xyz="-0.0087 -0.01725  -0.00006" />
+        <inertia ixx="0.00005" ixy="0.0" ixz="0.0" iyy="0.00001" iyz="0.0" izz="0.00005" />
       </inertial>
     </link>
 
