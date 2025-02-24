@@ -2,6 +2,18 @@
 Changelog for package realsense2_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'tpe/simplify_3d_mesh' into 'alum-devel'
+  Fix dae mesh + replace by a simplified mesh for simulation
+  See merge request ros-overlays/realsense!42
+* Fix origin of inertia matrix
+* Fix position + collision + inertia of d435
+* Remove material
+* Change use mesh to false by default and replace the box by the simplified mesh
+* Fix dae mesh + replace by a simplified mesh for simulation
+* Contributors: sergiomoyano, thomas.peyrucain
+
 2000.3.0 (2025-01-22)
 ---------------------
 * using topics_ns for d435i
