@@ -1,3 +1,11 @@
+> :warning: WARNING :warning:
+>
+> ## Deprecation
+>
+> This package has been deprecated as of September 2025
+> and replaced with its upstream version [realsense-ros](https://github.com/IntelRealSense/realsense-ros/tree/ros2-master).
+> Latest PAL OS Version to use it is 25.01.
+
 <h1 align="center">
    <img src="https://www.intelrealsense.com/wp-content/uploads/2020/09/intel-realsense-logo-360px.png" alt="Intel® RealSense™" title="Intel® RealSense™" />
 </h1>
